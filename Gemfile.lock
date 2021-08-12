@@ -158,6 +158,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.12)
+  activerecord (~> 6.1, >= 6.1.4)
   bootsnap (>= 1.4.4)
   byebug
   faker

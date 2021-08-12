@@ -39,7 +39,7 @@ module WorkoutDiceBackend
 
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins '*'
+        origins '*'  #only use asterisk when deploying locally
         resource '*',
           :headers => :any,
           :methods => [:get, :post, :delete, :put, :patch, :options, :head],
