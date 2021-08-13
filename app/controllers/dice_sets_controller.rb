@@ -6,7 +6,7 @@ class DiceSetsController < ApplicationController
     end
 
     def show 
-        dice_set = DiceSet.find(params(:id))
+        dice_set = DiceSet.find(params[:id])
         render json: dice_set
     end
 end
