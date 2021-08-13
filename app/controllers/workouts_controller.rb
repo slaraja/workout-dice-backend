@@ -6,7 +6,7 @@ class WorkoutsController < ApplicationController
     end
 
     def show
-        workout = Workout.find(params[:id])
+        set_workout
     end
 
    #new action not needed because we're not rendering views
@@ -20,7 +20,7 @@ class WorkoutsController < ApplicationController
     end
 
     def destroy
-        workout = Workout.find(params[:id])
+        set_workout
         workout.destroy
         render json: {message: 'Workout was deleted.'}
     end
@@ -31,5 +31,8 @@ class WorkoutsController < ApplicationController
         params.require(:workout).permit(:name, :dice_set_id)
     end
 
+    def set_workout
+        workout = Workout.find(params[:id])
+    end
 
 end
