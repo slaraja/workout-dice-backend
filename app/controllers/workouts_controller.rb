@@ -1,11 +1,12 @@
 class WorkoutsController < ApplicationController
 
     def index
-
+        workouts = Workout.all
+        render json: workouts
     end
 
     def show
-
+        workout = Workout.find(params[:id])
     end
 
     def create
@@ -15,7 +16,7 @@ class WorkoutsController < ApplicationController
     private
 
     def workout_params
-        
+
     end
 
 
