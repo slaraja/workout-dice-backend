@@ -7,6 +7,7 @@ class WorkoutsController < ApplicationController
 
     def show
         set_workout
+        render json: @workout
     end
 
    #new action not needed because we're not rendering views
@@ -28,11 +29,11 @@ class WorkoutsController < ApplicationController
     private
 
     def workout_params
-        params.require(:workout).permit(:name, :dice_set_id)
+        params.require(:workout).permit(:name, :id)
     end
 
     def set_workout
-        workout = Workout.find(params[:id])
+        @workout = Workout.find(params[:id])
     end
 
 end
