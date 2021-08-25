@@ -2,7 +2,7 @@ class DiceSetsController < ApplicationController
 
     def index
         dice_sets = DiceSet.all
-        render json: dice_sets
+        render json: dice_sets, include: :workouts
     end
 
     def show 
