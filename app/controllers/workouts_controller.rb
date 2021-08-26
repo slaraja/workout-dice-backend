@@ -6,7 +6,7 @@ class WorkoutsController < ApplicationController
     end
 
     def show 
-        workout = DiceSet.find(params[:id])
+        workout = Workout.find(params[:id])
         render json: workout
     end
 end
