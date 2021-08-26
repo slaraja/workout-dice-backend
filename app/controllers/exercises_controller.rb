@@ -12,7 +12,7 @@ class ExercisesController < ApplicationController
 
    #new action not needed because we're not rendering views
     def create
-        exercise = Exercise.create(workout_params)
+        exercise = Exercise.create(exercise_params)
         if exercise
             render json: exercise
         else
@@ -32,7 +32,7 @@ class ExercisesController < ApplicationController
         params.require(:exercise).permit(:name, :id)
     end
 
-    def set_workout
+    def set_exercise
         @exercise = Exercise.find(params[:id])
     end
 
