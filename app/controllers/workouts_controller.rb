@@ -1,12 +1,12 @@
 class WorkoutsController < ApplicationController
 
     def index
-        dice_sets = DiceSet.all
-        render json: dice_sets, include: :workouts
+        workouts = Workout.all
+        render json: workouts, include: :exercises
     end
 
     def show 
-        dice_set = DiceSet.find(params[:id])
-        render json: dice_set
+        workout = DiceSet.find(params[:id])
+        render json: workout
     end
 end
