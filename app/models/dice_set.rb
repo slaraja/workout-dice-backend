@@ -1,3 +1,3 @@
-class DiceSet < ApplicationRecord
-    has_many :workouts
+class Workout < ApplicationRecord
+    has_many :exercises
 end
