@@ -22,8 +22,8 @@ class ExercisesController < ApplicationController
 
     def destroy
         set_exercise
-        exercise.destroy
-        render json: {message: 'Workout was deleted.'}
+        @exercise.destroy
+        render json: {message: 'Exercise was deleted.'}
     end
 
     private
