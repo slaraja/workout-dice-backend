@@ -1,24 +1,50 @@
-# README
+# Workout Form
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+A form to keep track of home workouts with lists of exercises and associated reps.
 
-* Ruby version
+<img width="574" alt="Screen Shot 2021-06-18 at 1 55 56 PM" src="https://user-images.githubusercontent.com/77073805/122599891-09260080-d03d-11eb-94a1-afdb21eb9465.png">
 
-* System dependencies
+## Application Instructions
+- User can view the list of exercises and reps in each workout.
+- User can add new exercies and reps to workouts.
+- User can delete exercises and reps from workouts.
 
-* Configuration
+## Video Demo
 
-* Database creation
+https://drive.google.com/drive/u/0/folders/1_4HgODo3BrYy5EfpLIaZItSTFRIsBaCe
 
-* Database initialization
 
-* How to run the test suite
+## Install Instructions
 
-* Services (job queues, cache servers, search engines, etc.)
+Backend (Rails):
+1. Go to https://github.com/slaraja/workout-dice-backend
+2. Clone the file
+3. Open a terminal on your computer
+4. Download the file to your computer
+5. Navigate to the folder where the file is saved
+6. Run 'bundle install'
+7. Run 'rails db:migrate'
+8. Run 'rails db:seed'
+9. Run 'rails server'
 
-* Deployment instructions
+Frontend (Javascript):
+1. Go to https://github.com/slaraja/workout-dice-frontend
+2. Clone the file
+3. Open a terminal on your computer
+4. Download the file to your computer
+5. Navigate to the folder where the file is saved
+6. Run 'open index.html'
 
-* ...
+## Author
+
+**Stephanie La Raja**
+
+## Contributing:
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/slaraja/workout-dice-backend. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the code of conduct.
+
+## License:
+
+The gem is available as open source under the terms of the MIT License: https://opensource.org/licenses/MIT
